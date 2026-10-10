@@ -1,6 +1,6 @@
 package control;
 
-public class MatrixMultiplication {
+public class MatrixMultiplier {
 
     public static int[][] multiply(int[][] matrixA, int[][] matrixB) {
         int n = matrixA.length;

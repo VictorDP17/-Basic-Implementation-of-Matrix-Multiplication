@@ -2,7 +2,7 @@ package control;
 
 import java.util.Random;
 
-public class GenerateMatrix {
+public class MatrixGenerator {
     public static Random RANDOM = new Random(777);
 
     public static int[][] generateMatrix(int n) {

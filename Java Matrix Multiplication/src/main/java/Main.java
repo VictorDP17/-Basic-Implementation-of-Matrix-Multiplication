@@ -1,6 +1,6 @@
-import control.GenerateMatrix;
-import control.MatrixMultiplication;
-import control.PrintMatrix;
+import control.MatrixGenerator;
+import control.MatrixMultiplier;
+import control.MatrixPrinter;
 
 public class Main {
     private static final int[] MATRIX_SIZES = {2, 4};
@@ -16,26 +16,26 @@ public class Main {
 
     private static void multiplyRandomMatrices(int size) {
         System.out.println("- Random Matrices Multiplication:");
-        int[][] matrixA = GenerateMatrix.generateMatrix(size);
-        int[][] matrixB = GenerateMatrix.generateMatrix(size);
+        int[][] matrixA = MatrixGenerator.generateMatrix(size);
+        int[][] matrixB = MatrixGenerator.generateMatrix(size);
 
-        int[][] resultMatrix = MatrixMultiplication.multiply(matrixA, matrixB);
-        PrintMatrix.printMatrix(resultMatrix);
+        int[][] resultMatrix = MatrixMultiplier.multiply(matrixA, matrixB);
+        MatrixPrinter.printMatrix(resultMatrix);
     }
 
     private static void multiplyIdentityMatrices(int size) {
         System.out.println("- Identity Matrices Multiplication:");
-        int[][] identityMatrix = GenerateMatrix.generateIdentityMatrix(size);
+        int[][] identityMatrix = MatrixGenerator.generateIdentityMatrix(size);
 
-        int[][] resultMatrix = MatrixMultiplication.multiply(identityMatrix, identityMatrix);
-        PrintMatrix.printMatrix(resultMatrix);
+        int[][] resultMatrix = MatrixMultiplier.multiply(identityMatrix, identityMatrix);
+        MatrixPrinter.printMatrix(resultMatrix);
     }
 
     private static void multiplyZeroMatrices(int size) {
         System.out.println("- Zero Matrices Multiplication:");
-        int[][] zeroMatrix = GenerateMatrix.generateZeroMatrix(size);
+        int[][] zeroMatrix = MatrixGenerator.generateZeroMatrix(size);
 
-        int[][] resultMatrix = MatrixMultiplication.multiply(zeroMatrix, zeroMatrix);
-        PrintMatrix.printMatrix(resultMatrix);
+        int[][] resultMatrix = MatrixMultiplier.multiply(zeroMatrix, zeroMatrix);
+        MatrixPrinter.printMatrix(resultMatrix);
     }
 }

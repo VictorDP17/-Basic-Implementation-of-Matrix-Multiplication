@@ -21,24 +21,24 @@ public class BenchmarkRunner {
 
     @Setup(Level.Trial)
     public void setup() {
-        matrixA = GenerateMatrix.generateMatrix(MATRIX_SIZE);
-        matrixB = GenerateMatrix.generateMatrix(MATRIX_SIZE);
-        identityMatrix = GenerateMatrix.generateIdentityMatrix(MATRIX_SIZE);
-        zeroMatrix = GenerateMatrix.generateZeroMatrix(MATRIX_SIZE);
+        matrixA = MatrixGenerator.generateMatrix(MATRIX_SIZE);
+        matrixB = MatrixGenerator.generateMatrix(MATRIX_SIZE);
+        identityMatrix = MatrixGenerator.generateIdentityMatrix(MATRIX_SIZE);
+        zeroMatrix = MatrixGenerator.generateZeroMatrix(MATRIX_SIZE);
     }
 
     @Benchmark
     public void multiplyRandomMatrices(Blackhole blackhole) {
-        blackhole.consume(MatrixMultiplication.multiply(matrixA, matrixB));
+        blackhole.consume(MatrixMultiplier.multiply(matrixA, matrixB));
     }
 
     @Benchmark
     public void multiplyIdentityMatrices(Blackhole blackhole) {
-        blackhole.consume(MatrixMultiplication.multiply(identityMatrix, identityMatrix));
+        blackhole.consume(MatrixMultiplier.multiply(identityMatrix, identityMatrix));
     }
 
     @Benchmark
     public void multiplyZeroMatrices(Blackhole blackhole) {
-        blackhole.consume(MatrixMultiplication.multiply(zeroMatrix, zeroMatrix));
+        blackhole.consume(MatrixMultiplier.multiply(zeroMatrix, zeroMatrix));
     }
 }
