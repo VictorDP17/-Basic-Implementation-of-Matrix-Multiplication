@@ -170,8 +170,6 @@ The identity and zero matrices return the expected results.
 
 ## Plots
 
-The figures below are generated when the plotter runs.
-
 ### Random matrices
 
 ![Random matrix multiplication timing comparison](results/plots/time_comparison_random.png)
@@ -192,7 +190,7 @@ The figures below are generated when the plotter runs.
 
 ## Repository and submission contents
 
-The submission include the source code for the three implementations and the plotter, their configuration/build files, this README and the generated figures.
+The submission include the source code for the three implementations and the plotter, their configuration/build files, this README, the three original CSV files, the combined CSV and the generated figures.
 
 ## AI assistance disclosure
 
