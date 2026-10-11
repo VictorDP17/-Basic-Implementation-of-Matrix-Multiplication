@@ -156,7 +156,7 @@ The identity and zero matrices return the expected results.
 
 | Item | Value |
 |---|---|
-| Operating system and version | Windows 10 Home 2009 26200 |
+| Operating system and version | Windows 11 Home 25H2 |
 | CPU model | 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz |
 | Physical cores / logical processors | 6 / 12 |
 | Installed RAM | 7,65 GB |
