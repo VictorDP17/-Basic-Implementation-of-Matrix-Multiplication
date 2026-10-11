@@ -156,17 +156,17 @@ The identity and zero matrices return the expected results.
 
 | Item | Value |
 |---|---|
-| Operating system and version | Windows |
-| CPU model | TODO |
-| Physical cores / logical processors | TODO |
-| Installed RAM | TODO |
-| Java JDK version | 1.8.0_34 |
+| Operating system and version | Windows 10 Home 2009 26200 |
+| CPU model | 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz |
+| Physical cores / logical processors | 6 / 12 |
+| Installed RAM | 7,65 GB |
+| Java JDK version | 21.0.12.1 |
 | JMH version | 1.37 |
 | Python version | 3.12.10 |
 | Matplotlib version | 3.11.2 |
-| C compiler and version | TODO |
-| CMake version | TODO |
-| C build configuration and optimization flags | TODO |
+| C compiler and version | MinGW-w64 15.2.0 |
+| CMake version | 4.3.1 |
+| C build configuration and optimization flags | Debug; -g; no explicit optimization flags |
 
 ## Plots
 
