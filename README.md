@@ -176,13 +176,19 @@ The figures below are generated when the plotter runs.
 
 ![Random matrix multiplication timing comparison](results/plots/time_comparison_random.png)
 
+![Random matrix multiplication memory comparison](results/plots/memory_comparison_random.png)
+
 ### Identity matrices
 
 ![Identity matrix multiplication timing comparison](results/plots/time_comparison_identity.png)
 
+![Identity matrix multiplication memory comparison](results/plots/memory_comparison_identity.png)
+
 ### Zero matrices
 
 ![Zero matrix multiplication timing comparison](results/plots/time_comparison_zero.png)
+
+![Zero matrix multiplication memory comparison](results/plots/memory_comparison_zero.png)
 
 ## Repository and submission contents
 
