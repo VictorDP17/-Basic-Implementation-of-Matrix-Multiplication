@@ -164,7 +164,7 @@ The identity and zero matrices return the expected results.
 | JMH version | 1.37 |
 | Python version | 3.12.10 |
 | Matplotlib version | 3.11.2 |
-| C compiler and version | MinGW-w64 15.2.0 |
+| C compiler and version | MinGW-w64 GCC 15.2.0 |
 | CMake version | 4.3.1 |
 | C build configuration and optimization flags | Debug; -g; no explicit optimization flags |
 
