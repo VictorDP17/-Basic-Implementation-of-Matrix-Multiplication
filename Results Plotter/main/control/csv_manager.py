@@ -15,7 +15,7 @@ if ROOT is None:
         "The root folder Basic-Implementation-of-Matrix-Multiplication was not found"
     )
 
-COLUMNS = ["language", "benchmark", "matrix_size", "time_ms"]
+COLUMNS = ["language", "benchmark", "matrix_size", "mean_time", "median_time", "variance_time", "peak_memory_bytes"]
 LANGUAGES = ["Java", "Python", "C"]
 BENCHMARKS = ["random", "identity", "zero"]
 JAVA_BENCHMARKS = {
