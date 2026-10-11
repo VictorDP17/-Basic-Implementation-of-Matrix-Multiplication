@@ -156,7 +156,7 @@ The identity and zero matrices return the expected results.
 
 | Item | Value |
 |---|---|
-| Operating system and version | Windows 10 Home 2009 26200 |
+| Operating system and version | Windows 11 Home 25H2 |
 | CPU model | 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz |
 | Physical cores / logical processors | 6 / 12 |
 | Installed RAM | 7,65 GB |
@@ -164,7 +164,7 @@ The identity and zero matrices return the expected results.
 | JMH version | 1.37 |
 | Python version | 3.12.10 |
 | Matplotlib version | 3.11.2 |
-| C compiler and version | MinGW-w64 15.2.0 |
+| C compiler and version | MinGW-w64 GCC 15.2.0 |
 | CMake version | 4.3.1 |
 | C build configuration and optimization flags | Debug; -g; no explicit optimization flags |
 
@@ -176,13 +176,19 @@ The figures below are generated when the plotter runs.
 
 ![Random matrix multiplication timing comparison](results/plots/time_comparison_random.png)
 
+![Random matrix multiplication memory comparison](results/plots/memory_comparison_random.png)
+
 ### Identity matrices
 
 ![Identity matrix multiplication timing comparison](results/plots/time_comparison_identity.png)
 
+![Identity matrix multiplication memory comparison](results/plots/memory_comparison_identity.png)
+
 ### Zero matrices
 
 ![Zero matrix multiplication timing comparison](results/plots/time_comparison_zero.png)
+
+![Zero matrix multiplication memory comparison](results/plots/memory_comparison_zero.png)
 
 ## Repository and submission contents
 
