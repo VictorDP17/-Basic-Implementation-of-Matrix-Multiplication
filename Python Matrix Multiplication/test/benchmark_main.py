@@ -10,7 +10,7 @@ from benchmark_saver import BenchmarkSaver
 MATRIX_SIZES = [100, 200, 300, 400, 500]
 
 WARMUP_ITERATIONS = 1
-MEASUREMENT_ITERATIONS = 2
+MEASUREMENT_ITERATIONS = 5
 
 
 def run_benchmark():
@@ -28,12 +28,14 @@ def run_benchmark():
 
         for benchmark_name, matrices in benchmarks.items():
             matrix_1, matrix_2 = matrices
-            average_time, median_peak_bytes = calculate_metrics(benchmark_name, matrix_1, matrix_2, results, size)
+            mean_time, median_time, variance_time, median_peak_bytes = calculate_metrics(benchmark_name, matrix_1, matrix_2, results, size)
 
             print(
-                f"{benchmark_name}: "
-                f"{average_time:.6f} ms; "
-                f"{median_peak_bytes} B/op"
+                f"- {benchmark_name} benchmark:\n"
+                f"Mean time: {mean_time:.6f} ms\n"
+                f"Median time: {median_time:.6f} ms\n"
+                f"Variance time: {variance_time:.6f} ms\n"
+                f"Median peak bytes: {median_peak_bytes} B/op\n"
             )
 
     BenchmarkSaver.save_results(results)
@@ -75,7 +77,7 @@ def calculate_metrics(benchmark_name, matrix_1, matrix_2, results, size):
         "variance_time": variance_time,
         "peak_memory_bytes": median_peak_bytes
     })
-    return mean_time, median_peak_bytes
+    return mean_time, median_time, variance_time, median_peak_bytes
 
 
 def calculate_time(matrix_1, matrix_2):
