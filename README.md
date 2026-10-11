@@ -190,10 +190,10 @@ The submission include the source code for the three implementations and the plo
 
 ## AI assistance disclosure
 
-> **AI tool:** [Chat GPT]
+> **AI tool:** Chat GPT
 >
-> **Purpose:** [improve redaction, speed up code writing]
+> **Purpose:** Improve redaction, speed up code writing
 >
-> **Parts affected:** [different parts of the code, README and report]
+> **Parts affected:** Different parts of the code, README and report
 >
-> **Validation:** [the code was refactored and rewritten after use, the README and report were initially handwritten and then checked]
+> **Validation:** The code was refactored and rewritten after use, the README and report were initially handwritten and then checked
