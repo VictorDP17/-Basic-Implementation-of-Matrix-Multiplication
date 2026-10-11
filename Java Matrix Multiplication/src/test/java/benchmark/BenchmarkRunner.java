@@ -11,7 +11,7 @@ import control.*;
 @State(Scope.Benchmark)
 public class BenchmarkRunner {
 
-    @Param({"100", "200", "500", "1000"})
+    @Param({"100", "200", "300", "400", "500"})
     private int MATRIX_SIZE;
 
     private int[][] matrixA;
